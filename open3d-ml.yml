@@ -1,0 +1,21 @@
+name: test_growth_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy=1.25.0
+  - pyyaml=6.0.2
+  - libgcc-ng>=11.2.0
+  - libstdcxx-ng>=11.2.0
+  - zlib>=1.2.13
+  - xz=5.8.1
+  - liblzma=5.8.1
+  - pip
+  - pip:
+      - open3d==0.19.0
+      - pillow==11.0.0
+      - pyqt5==5.14.1
+      - pyqt5-qt5==5.15.16
+      - pyqt5-sip==12.17.0
+      - vtk==9.4.2

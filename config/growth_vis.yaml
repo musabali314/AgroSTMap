@@ -1,0 +1,9 @@
+GUI_background: 'white'  # choose from ['white', 'black']
+non_growth_points_color: 'gray'  # choose from ['gray', 'white', 'black']
+ranges: [2.2, 64, -10, 1, -1.5, -0.1]  # area of interest [x_min, x_max, y_min, y_max, z_min, z_max]
+#ranges: [-100, 100, -100, 100, -1.5, 0.3]  # for wheat 24-25 season 
+cell_size: 0.9  # float cell size
+growth_mu: 0.2
+pcd_directory: 'maps/wheet-22-23'
+#pcd_directory: 'maps/wheet-24-25'
+
