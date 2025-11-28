@@ -55,8 +55,8 @@ Given a predefined field boundary and mission profile, the system:
     - Week-over-week **growth visualization**
     - Change detection across planting/harvest cycles
 
-> 🔎 Note: AgroSTMap **does not** use Gaussian Splatting.
-> All 3D reconstruction is currently LiDAR-based via FAST-LIO2.
+> 🔎 Note: AgroSTMap plans on using Gaussian Splatting for denser maps.
+> All dense 3D reconstruction is currently via FAST-LIVO2.
 
 ---
 
@@ -133,15 +133,15 @@ Given a predefined field boundary and mission profile, the system:
 - **Airframe:** 500 mm quadrotor
 - **LiDAR:** Livox Mid360
 - **Cameras:**
-  - RGB camera (global or rolling shutter)
+  - Intel Realsense D455, ArduCam B0495
   - Optional NIR / multispectral camera for NDVI
 - **Navigation Stack:**
   - GNSS receiver
   - IMU
   - Onboard flight controller (e.g., PX4/ArduPilot)
 - **Onboard Compute:**
-  - **Odroid N2+** running:
-    - Ubuntu + ROS 1 Noetic
+  - **Odroid N2+/Jetson Nano** running:
+    - Ubuntu + ROS 1 Noetic/ROS 2 Jazzy
     - FAST-LIO2
     - Custom mapping & NDVI nodes
 
